@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FirstApp" parent="BaseTheme">
+        <item name="android:windowSplashScreenBackground">@android:color/holo_orange_dark</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@android:color/holo_blue_bright</item>
+    </style>
+</resources>

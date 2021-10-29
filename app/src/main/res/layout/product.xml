@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+
+
+    <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:src="@drawable/placeholder"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/foodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/foodImage"
+        android:text="Petis Pois et carottes"/>
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Cassegrin"
+        android:layout_weight="2"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/foodTitle"/>
+    <ImageView
+        android:id="@+id/nutriscroreImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nutriscore_d"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toEndOf="@id/foodTitle"
+        app:layout_constraintTop_toBottomOf="@id/foodImage"/>
+    <TextView
+        android:id="@+id/barcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity=""
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Code Barre :"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/brand"/>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity=""
+        android:textStyle="bold"
+        android:text="Quantité : "
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/barcode"/>
+
+    <TextView
+        android:id="@+id/soldIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity=""
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Vendu en :"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/quantity"/>
+    <TextView
+        android:id="@+id/ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity=""
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Ingrédients"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/soldIn"/>
+
+    <TextView
+        android:id="@+id/allergen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity=""
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Substances allergènes :"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/ingredient"/>
+
+    <TextView
+        android:id="@+id/additives"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity=""
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Additifs :"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/allergen"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
