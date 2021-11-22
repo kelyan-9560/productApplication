@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.emarquez.myapplication.ListFragment"
+        android:name="com.example.kelyan_bervin.firstapp.ListFragment"
         android:label="ListFragment" >
         <action
             android:id="@+id/action_listFragment_to_detailsFragment"
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.emarquez.myapplication.DetailsFragment"
+        android:name="com.example.kelyan_bervin.firstapp.ListFragment"
         android:label="DetailsFragment" >
         <argument
             android:name="day"
