@@ -12,7 +12,7 @@ Le sodium
 */
 
 
-class NutritionFacts (energy: NutritionFactsItem, butterfat: NutritionFactsItem, saturatedFat: NutritionFactsItem,
-                      carbohydrates: NutritionFactsItem, sugar: NutritionFactsItem, dietaryFibers: NutritionFactsItem,
-                        proteins: NutritionFactsItem, salt: NutritionFactsItem, sodium: NutritionFactsItem) {
+class NutritionFacts (val energy: NutritionFactsItem, val butterfat: NutritionFactsItem, val saturatedFat: NutritionFactsItem,
+                      val carbohydrates: NutritionFactsItem, val sugar: NutritionFactsItem, val dietaryFibers: NutritionFactsItem,
+                      val proteins: NutritionFactsItem, val salt: NutritionFactsItem, val sodium: NutritionFactsItem) {
 }

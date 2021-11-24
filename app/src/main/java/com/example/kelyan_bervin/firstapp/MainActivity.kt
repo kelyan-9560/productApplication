@@ -1,6 +1,5 @@
 package com.example.kelyan_bervin.firstapp
 
-import android.content.res.ColorStateList
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,7 +9,6 @@ import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import androidx.core.graphics.drawable.DrawableCompat
 import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.product.*
@@ -47,20 +45,21 @@ class MainActivity : AppCompatActivity() {
         val ingredients = listOf("Petits pois 66%", "eau", "garniture 2,8% (salade, oignon grelot)", "sucre", "sel", "arôme naturel")
         val allergens = listOf("Auncun")
         val additivesList = listOf("Auncun")
-        Énergie 293 kj
-        Matières grasses / Lipides 0,8 g
-        Acides gras saturés 0,1 g
-        Glucides 8,4 g
-        Sucres 5,2 g
-        Fibres alimentaires 5,2 g
-        Protéines 4,8 g
-        Sel 0,75 g
-        Sodium 0,295 g
-        val nutritionFactsItem = listOf(293, )
+
+        val energy = NutritionFactsItem("1", 15, 150)
+        val butterfat = NutritionFactsItem("1", 15, 150)
+        val saturatedFat = NutritionFactsItem("1", 15, 150)
+        val carbohydrates = NutritionFactsItem("1", 15, 150)
+        val sugar = NutritionFactsItem("1", 15, 5)
+        val dietaryFibers = NutritionFactsItem("1", 15, 150)
+        val proteins = NutritionFactsItem("1", 4, 8)
+        val salt = NutritionFactsItem("1", 0, 75)
+        val sodium = NutritionFactsItem("1", 0, 295)
+        val nutritionFacts = NutritionFacts(energy, butterfat, saturatedFat, carbohydrates, sugar, dietaryFibers, proteins, salt, sodium)
 
         val prod1 = Product ("Petit pois et carottes", "Cassegrain", "3083680085304", "B",
             "https://static.openfoodfacts.org/images/products/308/368/008/5304/front_fr.7.400.jpg", 1, country,
-            ingredients, allergens, additivesList)
+            ingredients, allergens, additivesList, nutritionFacts)
 
         foodTitle.text = prod1.name
         brand.text = prod1.brand
