@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v_guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v_guideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h_guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <!-- Title -->
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/forOneHundred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+
+        android:text="Pour 100g"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_1"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline_2"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/h_guideline_1"/>
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/perPart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+
+        android:text="Par part"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/h_guideline_1"/>
+
+
+    <!-- Ligne: Energie-->
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h_guideline_1"
+        app:layout_constraintEnd_toStartOf="@id/v_guideline_1"
+
+        android:padding="@+id/v_guideline_1"
+        android:paddingEnd="@+id/v_guideline_1"
+
+        android:text="Energie"
+        app:border="top|right"
+        android:textStyle="bold"/>
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/energyPer100g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_1"
+        app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
+        app:layout_constraintTop_toBottomOf="@id/h_guideline_1"
+
+        android:text="kj"
+        app:border="top|right"
+        android:textStyle="bold" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/energyPerPortion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sd"
+        android:textStyle="bold"
+
+        app:border="top"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/h_guideline_1" />
+
+
+    <!-- Ligne: Matières Grasses -->
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/butterfat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+
+        android:text="Matières Grasses"
+        android:textStyle="bold"
+
+        app:border="top|right"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
+
+        app:layout_constraintTop_toBottomOf="@id/energy" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/butterfatPer100g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_1"
+        app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
+        app:layout_constraintTop_toBottomOf="@id/energyPer100g"
+
+        android:text="g"
+        app:border="top|right"
+        android:textStyle="bold" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/butterfatPerPortion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sd"
+        android:textStyle="bold"
+
+        app:border="top"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/energyPerPortion" />
+
+
+    <!-- Ligne: Gras Saturés -->
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/saturated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+
+        android:text="Gras Saturés"
+        android:textStyle="bold"
+
+        app:border="top|right"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
+
+        app:layout_constraintTop_toBottomOf="@id/butterfat" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/saturedPer100g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_1"
+        app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
+        app:layout_constraintTop_toBottomOf="@id/butterfatPer100g"
+
+        android:text="g"
+        app:border="top|right"
+        android:textStyle="bold" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/saturedPerPortion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sd"
+        android:textStyle="bold"
+
+        app:border="top"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/butterfatPerPortion" />
+
+
+    <!-- Ligne: Glucide-->
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/glucide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Glucides"
+        android:textStyle="bold"
+        app:border="top|right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
+        app:layout_constraintTop_toBottomOf="@id/saturated" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/glucidePer100g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_1"
+        app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
+        app:layout_constraintTop_toBottomOf="@id/saturedPer100g"
+
+        android:text="g"
+        app:border="top|right"
+        android:textStyle="bold" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/glucidePerPortion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sd"
+        android:textStyle="bold"
+
+        app:border="top"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/saturedPerPortion" />
+
+
+    <!-- Ligne: Sucre -->
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Sucre"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
+        app:layout_constraintTop_toBottomOf="@id/glucide" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/sugarPer100g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_1"
+        app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
+        app:layout_constraintTop_toBottomOf="@id/glucidePer100g"
+
+        android:text="g"
+        app:border="top|right"
+        android:textStyle="bold" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/sugarPerPortion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sd"
+        android:textStyle="bold"
+
+        app:border="top"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/glucidePerPortion" />
+
+
+    <!-- Ligne: Fibres Alimentaires-->
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/fiber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
+        app:layout_constraintTop_toBottomOf="@id/sugar"
+        android:text="Fibres Alimentaires"
+        android:textStyle="bold"/>
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/fiberPer100g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_1"
+        app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
+        app:layout_constraintTop_toBottomOf="@id/sugarPer100g"
+
+        android:text="g"
+        app:border="top|right"
+        android:textStyle="bold" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/fiberPerPortion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sd"
+        android:textStyle="bold"
+
+        app:border="top"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/sugarPerPortion" />
+
+
+    <!-- Ligne: Protéines-->
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
+        app:layout_constraintTop_toBottomOf="@id/fiber"
+        app:border="top|right"
+        android:text="Protéines"
+        android:textStyle="bold"/>
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/proteinPer100g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_1"
+        app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
+        app:layout_constraintTop_toBottomOf="@id/fiberPer100g"
+
+        android:text="g"
+        app:border="top|right"
+        android:textStyle="bold" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/proteinPerPortion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sd"
+        android:textStyle="bold"
+
+        app:border="top"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/fiberPerPortion" />
+
+    <!-- Ligne: Sel-->
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/salt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:border="top|right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
+        app:layout_constraintTop_toBottomOf="@id/protein"
+        android:text="Sel"
+        android:textStyle="bold"/>
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/saltPer100g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_1"
+        app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
+        app:layout_constraintTop_toBottomOf="@id/proteinPer100g"
+
+        android:text="g"
+        app:border="top|right"
+        android:textStyle="bold" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/saltPerPortion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sd"
+        android:textStyle="bold"
+
+        app:border="top"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/proteinPerPortion" />
+
+
+    <!-- Ligne: Sodium-->
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/sodium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
+        app:layout_constraintTop_toBottomOf="@id/salt"
+        android:text="Sodium"
+        android:textStyle="bold"/>
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/sodiumPer100g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_1"
+        app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
+        app:layout_constraintTop_toBottomOf="@id/proteinPer100g"
+
+        android:text="g"
+        app:border="top|right"
+        android:textStyle="bold" />
+
+    <com.example.kelyan_bervin.firstapp.TableCellView
+        android:id="@+id/sodiumPerPortion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sd"
+        android:textStyle="bold"
+
+        app:border="top"
+
+        app:layout_constraintStart_toStartOf="@id/v_guideline_2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/proteinPerPortion" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

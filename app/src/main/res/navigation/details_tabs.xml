@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/details_tabs"
+    app:startDestination="@id/listFragment2">
+
+
+    <fragment
+        android:id="@+id/listFragment2"
+        android:name="com.example.kelyan_bervin.firstapp.ListFragment"
+        android:label="ListFragment" />
+    <fragment
+        android:id="@+id/productsListFragment"
+        android:name="com.example.kelyan_bervin.firstapp.ProductsListFragment"
+        android:label="ProductsListFragment" />
+    <fragment
+        android:id="@+id/productDetailsSummaryFragment"
+        android:name="com.example.kelyan_bervin.firstapp.ProductDetailsSummaryFragment"
+        android:label="ProductDetailsSummaryFragment" />
+</navigation>

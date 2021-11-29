@@ -17,7 +17,8 @@
         android:name="com.example.kelyan_bervin.firstapp.ListFragment"
         android:label="DetailsFragment" >
         <argument
-            android:name="day"
-            app:argType="string" />
+            android:name="product"
+            app:argType="com." />
+
     </fragment>
 </navigation>

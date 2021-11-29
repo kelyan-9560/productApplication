@@ -1,19 +1,29 @@
 package com.example.kelyan_bervin.firstapp
 
+import android.annotation.SuppressLint
+import android.content.res.ColorStateList
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.SpannableStringBuilder
 import android.text.style.StyleSpan
 import android.util.Log
+import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.DrawableCompat
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.fragment_list.*
+import kotlinx.android.synthetic.main.nutrition.*
 import kotlinx.android.synthetic.main.product.*
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -40,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         //utilisation des TextView
         findViewById<TextView>(R.id.barcode).setTextBold(getString(R.string.product_barcode, "1234"),)
 
-        /////////
+        /********* Initialisation produit ******************/
         val country = listOf("France", "ALlemagne", "Pérou", "Pays-Bas")
         val ingredients = listOf("Petits pois 66%", "eau", "garniture 2,8% (salade, oignon grelot)", "sucre", "sel", "arôme naturel")
         val allergens = listOf("Auncun")
@@ -55,11 +65,14 @@ class MainActivity : AppCompatActivity() {
         val proteins = NutritionFactsItem("1", 4, 8)
         val salt = NutritionFactsItem("1", 0, 75)
         val sodium = NutritionFactsItem("1", 0, 295)
+
         val nutritionFacts = NutritionFacts(energy, butterfat, saturatedFat, carbohydrates, sugar, dietaryFibers, proteins, salt, sodium)
 
         val prod1 = Product ("Petit pois et carottes", "Cassegrain", "3083680085304", "B",
             "https://static.openfoodfacts.org/images/products/308/368/008/5304/front_fr.7.400.jpg", 1, country,
             ingredients, allergens, additivesList, nutritionFacts)
+        /*************************************************/
+
 
         foodTitle.text = prod1.name
         brand.text = prod1.brand
@@ -70,9 +83,33 @@ class MainActivity : AppCompatActivity() {
         additives.text = prod1.additives.toString()
 
         Picasso.get().load("url").into(nutriscroreImage)
-        //////////
-        //nutrition
-        //DrawableCompat.setTintList(R.layout.nutrition.background, ColorStateList.valueOf(votreCouleur))
+
+        /********** nutrition.xml **********/
+        //text
+        findViewById<TextView>(R.id.salte).text = butterfat.quantityPer100g.toString()
+        findViewById<TextView>(R.id.salte).text = saturatedFat.quantityPer100g.toString()
+        findViewById<TextView>(R.id.salte).text = sugar.quantityPer100g.toString()
+        findViewById<TextView>(R.id.salte).text = salt.quantityPer100g.toString()
+        //point
+        DrawableCompat.setTintList(point1.background, ColorStateList.valueOf(R.color.nutrient_level_low))
+        DrawableCompat.setTintList(point2.background, ColorStateList.valueOf(R.color.nutrient_level_low))
+        DrawableCompat.setTintList(point3.background, ColorStateList.valueOf(R.color.nutrient_level_moderate))
+        DrawableCompat.setTintList(point4.background, ColorStateList.valueOf(R.color.nutrient_level_high))
+
+
+
+
+        val days = List(30, {day -> "${
+            Calendar.getInstance().run {
+            set(Calendar.DAY_OF_WEEK, day)
+            get(Calendar.DAY_OF_WEEK)
+        }}"})
+
+        main_list.run {
+            layoutManager = GridLayoutManager(this@MainActivity, 3)
+            adapter = ListAdapter()
+            addItemDecoration(DividerItemDecoration(this@MainActivity, DividerItemDecoration.VERTICAL))
+        }
 
 
     }
