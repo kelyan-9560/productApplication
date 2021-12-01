@@ -11,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.40" />
+        app:layout_constraintGuide_percent="0.40"
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/v_guideline_2"
@@ -30,56 +31,66 @@
     <!-- Title -->
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/forOneHundred"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
 
         android:text="Pour 100g"
         android:textStyle="bold"
+        app:border="left|right"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_1"
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_2"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/h_guideline_1"/>
+        app:layout_constraintBottom_toTopOf="@+id/h_guideline_1"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"
+        />
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/perPart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
 
         android:text="Par part"
         android:textStyle="bold"
+        app:border="left|right"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_2"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/h_guideline_1"/>
+        app:layout_constraintBottom_toTopOf="@+id/h_guideline_1"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
 
     <!-- Ligne: Energie-->
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/energy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/h_guideline_1"
         app:layout_constraintEnd_toStartOf="@id/v_guideline_1"
 
-        android:padding="@+id/v_guideline_1"
-        android:paddingEnd="@+id/v_guideline_1"
-
         android:text="Energie"
         app:border="top|right"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.40"
+        android:gravity="center_vertical"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/energyPer100g"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_1"
         app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
@@ -87,46 +98,52 @@
 
         android:text="kj"
         app:border="top|right"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/energyPerPortion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sd"
-        android:textStyle="bold"
-
-        app:border="top"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h_guideline_1"
 
-        app:layout_constraintTop_toBottomOf="@id/h_guideline_1" />
+        android:text="sd"
+        android:textStyle="bold"
+        app:border="top"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
 
     <!-- Ligne: Matières Grasses -->
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/butterfat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         android:text="Matières Grasses"
         android:textStyle="bold"
-
         app:border="top|right"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
+        app:layout_constraintTop_toBottomOf="@id/energy"
 
-        app:layout_constraintTop_toBottomOf="@id/energy" />
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.40"
+        android:gravity="center_vertical"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/butterfatPer100g"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_1"
         app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
@@ -134,46 +151,52 @@
 
         android:text="g"
         app:border="top|right"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/butterfatPerPortion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         android:text="sd"
         android:textStyle="bold"
-
         app:border="top"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/energyPerPortion"
 
-        app:layout_constraintTop_toBottomOf="@id/energyPerPortion" />
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
 
     <!-- Ligne: Gras Saturés -->
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/saturated"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         android:text="Gras Saturés"
         android:textStyle="bold"
-
         app:border="top|right"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
+        app:layout_constraintTop_toBottomOf="@id/butterfat"
 
-        app:layout_constraintTop_toBottomOf="@id/butterfat" />
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.40"
+        android:gravity="center_vertical"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/saturedPer100g"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_1"
         app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
@@ -181,39 +204,52 @@
 
         android:text="g"
         app:border="top|right"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/saturedPerPortion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         android:text="sd"
         android:textStyle="bold"
-
         app:border="top"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/butterfatPerPortion"
 
-        app:layout_constraintTop_toBottomOf="@id/butterfatPerPortion" />
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
 
     <!-- Ligne: Glucide-->
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/glucide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         android:text="Glucides"
         android:textStyle="bold"
         app:border="top|right"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
-        app:layout_constraintTop_toBottomOf="@id/saturated" />
+        app:layout_constraintTop_toBottomOf="@id/saturated"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.40"
+        android:gravity="center_vertical"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/glucidePer100g"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_1"
         app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
@@ -221,39 +257,52 @@
 
         android:text="g"
         app:border="top|right"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/glucidePerPortion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         android:text="sd"
         android:textStyle="bold"
-
         app:border="top"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/saturedPerPortion"
 
-        app:layout_constraintTop_toBottomOf="@id/saturedPerPortion" />
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
 
     <!-- Ligne: Sucre -->
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/sugar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         android:text="Sucre"
         android:textStyle="bold"
+        app:border="top|right"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
-        app:layout_constraintTop_toBottomOf="@id/glucide" />
+        app:layout_constraintTop_toBottomOf="@id/glucide"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.40"
+        android:gravity="center_vertical"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/sugarPer100g"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_1"
         app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
@@ -261,39 +310,52 @@
 
         android:text="g"
         app:border="top|right"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/sugarPerPortion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         android:text="sd"
         android:textStyle="bold"
-
         app:border="top"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/glucidePerPortion"
 
-        app:layout_constraintTop_toBottomOf="@id/glucidePerPortion" />
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
 
     <!-- Ligne: Fibres Alimentaires-->
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/fiber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
         app:layout_constraintTop_toBottomOf="@id/sugar"
+
         android:text="Fibres Alimentaires"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        app:border="top|right"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.40"
+        android:gravity="center_vertical"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/fiberPer100g"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_1"
         app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
@@ -301,40 +363,52 @@
 
         android:text="g"
         app:border="top|right"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/fiberPerPortion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         android:text="sd"
         android:textStyle="bold"
-
         app:border="top"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sugarPerPortion"
 
-        app:layout_constraintTop_toBottomOf="@id/sugarPerPortion" />
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
 
     <!-- Ligne: Protéines-->
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/protein"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
         app:layout_constraintTop_toBottomOf="@id/fiber"
+
         app:border="top|right"
         android:text="Protéines"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.40"
+        android:gravity="center_vertical"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/proteinPer100g"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_1"
         app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
@@ -342,39 +416,51 @@
 
         android:text="g"
         app:border="top|right"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/proteinPerPortion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         android:text="sd"
         android:textStyle="bold"
-
         app:border="top"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fiberPerPortion"
 
-        app:layout_constraintTop_toBottomOf="@id/fiberPerPortion" />
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
     <!-- Ligne: Sel-->
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/salt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:border="top|right"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
         app:layout_constraintTop_toBottomOf="@id/protein"
+
         android:text="Sel"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        app:border="top|right"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.40"
+        android:gravity="center_vertical"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/saltPer100g"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_1"
         app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
@@ -382,61 +468,82 @@
 
         android:text="g"
         app:border="top|right"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/saltPerPortion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         android:text="sd"
         android:textStyle="bold"
-
         app:border="top"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proteinPerPortion"
 
-        app:layout_constraintTop_toBottomOf="@id/proteinPerPortion" />
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
 
     <!-- Ligne: Sodium-->
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/sodium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
         app:layout_constraintTop_toBottomOf="@id/salt"
+
         android:text="Sodium"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        app:border="top|right|bottom"
+
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.40"
+        android:gravity="center_vertical"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/sodiumPer100g"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_1"
         app:layout_constraintEnd_toStartOf="@id/v_guideline_2"
-        app:layout_constraintTop_toBottomOf="@id/proteinPer100g"
+        app:layout_constraintTop_toBottomOf="@id/saltPer100g"
 
         android:text="g"
-        app:border="top|right"
-        android:textStyle="bold" />
+        app:border="top|right|bottom"
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
     <com.example.kelyan_bervin.firstapp.TableCellView
         android:id="@+id/sodiumPerPortion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
         android:text="sd"
         android:textStyle="bold"
-
-        app:border="top"
+        app:border="top|bottom"
 
         app:layout_constraintStart_toStartOf="@id/v_guideline_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/saltPerPortion"
 
-        app:layout_constraintTop_toBottomOf="@id/proteinPerPortion" />
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.30"
+        android:gravity="center"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
