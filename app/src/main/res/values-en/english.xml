@@ -6,4 +6,15 @@
     <string name="ingredient">Ingredient : %1$s</string>
     <string name="allergen">Allergen : %1$s</string>
     <string name="additives">Additives : %1$s</string>
+    <string name="for_100g">For 100g</string>
+    <string name="per_part">Per part</string>
+    <string name="energy">Energy</string>
+    <string name="butterfat">Butterfat</string>
+    <string name="satured_fat">Satured fat</string>
+    <string name="glucides">Carbohydrates</string>
+    <string name="sugar">Sugar</string>
+    <string name="fiber">Dietary Fiber</string>
+    <string name="protein">Protein</string>
+    <string name="salt">Salt</string>
+    <string name="sodium">Sodium</string>
 </resources>

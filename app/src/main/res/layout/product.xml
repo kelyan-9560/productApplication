@@ -63,7 +63,7 @@
         android:gravity=""
         android:textSize="15sp"
         android:textStyle="bold"
-        android:text="Code Barre :"
+        android:text="@string/product_barcode"
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/brand"/>
 
@@ -73,7 +73,7 @@
         android:layout_height="50dp"
         android:gravity=""
         android:textStyle="bold"
-        android:text="Quantité : "
+        android:text="@string/quantity"
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/barcode"/>
 
@@ -84,7 +84,7 @@
         android:gravity=""
         android:textSize="15sp"
         android:textStyle="bold"
-        android:text="Vendu en :"
+        android:text="@string/soldIn"
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/quantity"/>
     <TextView
@@ -94,7 +94,7 @@
         android:gravity=""
         android:textSize="15sp"
         android:textStyle="bold"
-        android:text="Ingrédients"
+        android:text="@string/ingredient"
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/soldIn"/>
 
@@ -105,7 +105,7 @@
         android:gravity=""
         android:textSize="15sp"
         android:textStyle="bold"
-        android:text="Substances allergènes :"
+        android:text="@string/allergen"
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/ingredient"/>
 
@@ -116,7 +116,7 @@
         android:gravity=""
         android:textSize="15sp"
         android:textStyle="bold"
-        android:text="Additifs :"
+        android:text="@string/additives"
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/allergen"/>
 

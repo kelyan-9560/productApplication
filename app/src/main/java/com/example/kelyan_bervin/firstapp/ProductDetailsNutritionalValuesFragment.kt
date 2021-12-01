@@ -13,7 +13,7 @@ class ProductDetailsNutritionalValuesFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(
-            R.layout.nutritional_information,
+            R.layout.fragment_details_nutrition,
             container,
             false
         )

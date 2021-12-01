@@ -34,7 +34,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
 
-        android:text="Pour 100g"
+        android:text="@string/for_100g"
         android:textStyle="bold"
         app:border="left|right"
 
@@ -54,7 +54,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
 
-        android:text="Par part"
+        android:text="@string/per_part"
         android:textStyle="bold"
         app:border="left|right"
 
@@ -79,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@id/h_guideline_1"
         app:layout_constraintEnd_toStartOf="@id/v_guideline_1"
 
-        android:text="Energie"
+        android:text="@string/energy"
         app:border="top|right"
         android:textStyle="bold"
 
@@ -128,7 +128,7 @@
         android:layout_width="0dp"
         android:layout_height="35dp"
 
-        android:text="Matières Grasses"
+        android:text="@string/butterfat"
         android:textStyle="bold"
         app:border="top|right"
 
@@ -181,7 +181,7 @@
         android:layout_width="0dp"
         android:layout_height="35dp"
 
-        android:text="Gras Saturés"
+        android:text="@string/satured_fat"
         android:textStyle="bold"
         app:border="top|right"
 
@@ -234,7 +234,7 @@
         android:layout_width="0dp"
         android:layout_height="35dp"
 
-        android:text="Glucides"
+        android:text="@string/glucides"
         android:textStyle="bold"
         app:border="top|right"
 
@@ -287,7 +287,7 @@
         android:layout_width="0dp"
         android:layout_height="35dp"
 
-        android:text="Sucre"
+        android:text="@string/sugar"
         android:textStyle="bold"
         app:border="top|right"
 
@@ -344,7 +344,7 @@
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
         app:layout_constraintTop_toBottomOf="@id/sugar"
 
-        android:text="Fibres Alimentaires"
+        android:text="@string/fiber"
         android:textStyle="bold"
         app:border="top|right"
 
@@ -398,7 +398,7 @@
         app:layout_constraintTop_toBottomOf="@id/fiber"
 
         app:border="top|right"
-        android:text="Protéines"
+        android:text="@string/protein"
         android:textStyle="bold"
 
         app:layout_constraintWidth_default="percent"
@@ -449,7 +449,7 @@
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
         app:layout_constraintTop_toBottomOf="@id/protein"
 
-        android:text="Sel"
+        android:text="@string/salt"
         android:textStyle="bold"
         app:border="top|right"
 
@@ -502,7 +502,7 @@
         app:layout_constraintEnd_toStartOf="@+id/v_guideline_1"
         app:layout_constraintTop_toBottomOf="@id/salt"
 
-        android:text="Sodium"
+        android:text="@string/sodium"
         android:textStyle="bold"
         app:border="top|right|bottom"
 

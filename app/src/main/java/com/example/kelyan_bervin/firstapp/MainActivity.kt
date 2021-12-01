@@ -99,11 +99,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val days = List(30, {day -> "${
-            Calendar.getInstance().run {
-            set(Calendar.DAY_OF_WEEK, day)
-            get(Calendar.DAY_OF_WEEK)
-        }}"})
 
         main_list.run {
             layoutManager = GridLayoutManager(this@MainActivity, 3)

@@ -19,6 +19,8 @@
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/firstApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2703125" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApllication/app/src/main/res/layout/nutrition.xml" value="0.24365942028985507" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/drawable/ic_calories.xml" value="0.1574074074074074" />
+        <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/drawable/ic_nav_bar_cart.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/drawable/ic_nav_bar_profile.xml" value="0.21481481481481482" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/drawable/point.xml" value="0.1574074074074074" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/drawable/toolbar.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/layout-land/fragment1.xml" value="0.20833333333333334" />
@@ -28,11 +30,13 @@
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/layout/example_constraint.xml" value="0.1721014492753623" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/layout/fragment_details.xml" value="0.1721014492753623" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/layout/fragment_details_nutrition.xml" value="0.4" />
+        <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/layout/fragment_list.xml" value="0.23550724637681159" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/layout/list_fragment.xml" value="0.18297101449275363" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/layout/list_item_cell.xml" value="0.18115942028985507" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/layout/nutrition.xml" value="0.264" />
-        <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/layout/nutritional_information.xml" value="0.18297101449275363" />
+        <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/layout/nutritional_information.xml" value="0.6" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/layout/product.xml" value="0.264" />
+        <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/menu/product_details_tabs.xml" value="0.3625" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/menu/product_menu.xml" value="0.25" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/Android/productApplication/app/src/main/res/menu/product_menu_tabs.xml" value="0.3625" />
         <entry key="..\:/Users/kekeb/Documents/ESGI/4eme_annee/firstApp/app/src/main/res/drawable/ic_calories.xml" value="0.2703125" />
