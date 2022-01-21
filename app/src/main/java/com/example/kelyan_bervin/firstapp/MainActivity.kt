@@ -1,6 +1,7 @@
 package com.example.kelyan_bervin.firstapp
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -115,5 +116,17 @@ class MainActivity : AppCompatActivity() {
         builder.setSpan(StyleSpan(Typeface.BOLD), 0, text.indexOf(separator) + 1, 0)
         setText(builder)
     }
+
+
+
+    //scanner un QRCode
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == 100 && data != null) {
+            data.getStringExtra(localClassName)
+        }
+    }
+
 
 }
